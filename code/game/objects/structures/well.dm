@@ -54,6 +54,16 @@
 		return
 	..()
 
+/obj/structure/well/fountain/angel
+	name = "overgrown fountain"
+	desc = "A fountain overflowing with sparkling water. The statue is cracked and overgrown, but the water is clear and clean."
+	icon = 'icons/roguetown/misc/tallandwide.dmi'
+	icon_state = "overgrown_fountain_flowing"
+	max_integrity = 300
+	blade_dulling = DULLING_BASH
+	layer = ABOVE_MOB_LAYER
+	plane = GAME_PLANE_UPPER
+
 /obj/structure/well/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/reagent_containers/glass/bucket))
 		var/obj/item/reagent_containers/glass/bucket/W = I

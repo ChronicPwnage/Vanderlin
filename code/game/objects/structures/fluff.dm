@@ -703,6 +703,10 @@
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "elfs"
 
+/obj/structure/fluff/statue/small/overgrown
+	icon = 'icons/roguetown/misc/structure.dmi'
+	icon_state = "elfs_overgrown"
+
 /obj/structure/fluff/statue/pillar
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "pillar"
