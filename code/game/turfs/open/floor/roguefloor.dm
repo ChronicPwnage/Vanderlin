@@ -1015,6 +1015,32 @@
 	. = ..()
 	icon_state = "mossystone[rand(1,3)]"
 
+/turf/open/floor/rogue/cobble/grey_mossy
+	icon_state = "grey_mossystone1"
+	footstep = FOOTSTEP_STONE
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	landsound = 'sound/foley/jumpland/stoneland.wav'
+	neighborlay = "cobbleedge"
+	smooth = SMOOTH_TRUE
+	canSmoothWith = list(/turf/open/floor/rogue/dirt,
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grass/red,
+						/turf/open/floor/rogue/grass/yel,
+						/turf/open/floor/rogue/grass/cold,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snow/patchy,
+						/turf/open/floor/rogue/snow/rough)
+
+/turf/open/floor/rogue/cobble/grey_mossy/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
+
+/turf/open/floor/rogue/cobble/grey_mossy/Initialize()
+	. = ..()
+	icon_state = "grey_mossystone[rand(1,3)]"
+
 /turf/open/floor/rogue/cobblerock
 	icon_state = "cobblerock"
 	footstep = FOOTSTEP_STONE
@@ -1088,6 +1114,13 @@
 /turf/open/floor/rogue/cobble/mossy/alt/Initialize()
 	. = ..()
 	icon_state = "mossystonealt[rand(1,3)]"
+
+/turf/open/floor/rogue/cobble/grey_mossy/alt
+	icon_state = "grey_mossystonealt1"
+
+/turf/open/floor/rogue/cobble/grey_mossy/alt/Initialize()
+	. = ..()
+	icon_state = "grey_mossystonealt[rand(1,3)]"
 
 
 /*	..................   Miscellany   ................... */
