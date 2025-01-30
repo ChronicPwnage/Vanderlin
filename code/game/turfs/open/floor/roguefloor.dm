@@ -1011,6 +1011,16 @@
 /turf/open/floor/rogue/cobble/mossy/cardinal_smooth(adjacencies)
 	roguesmooth(adjacencies)
 
+/turf/open/floor/rogue/cobble/greymossy
+	icon_state = "cobblestone_grey_mossy"
+	footstep = FOOTSTEP_STONE
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	landsound = 'sound/foley/jumpland/stoneland.wav'
+	neighborlay = "cobbleedge"
+	smooth = SMOOTH_TRUE
+
 /turf/open/floor/rogue/cobble/mossy/Initialize()
 	. = ..()
 	icon_state = "mossystone[rand(1,3)]"
