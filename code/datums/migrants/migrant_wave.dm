@@ -35,7 +35,7 @@
 		amount += roles[role_type]
 	return amount
 
-/datum/migrant_wave/pilgrim
+/* /datum/migrant_wave/pilgrim
 	name = "Pilgrimage"
 	downgrade_wave = /datum/migrant_wave/pilgrim_down_one
 	roles = list(
@@ -68,7 +68,7 @@
 		/datum/migrant_role/pilgrim = 1,
 	)
 	greet_text = "Fleeing from misfortune and hardship, you and a handful of survivors get closer to Vanderlin, looking for refuge and work, finally almost being there, almost..."
-
+*/
 /datum/migrant_wave/adventurer
 	name = "Adventure Party"
 	downgrade_wave = /datum/migrant_wave/adventurer_down_one
